@@ -1,0 +1,16 @@
+
+#include <stdio.h>
+
+int main() {
+    char str[200];
+    int i;
+
+    gets(str);   
+
+    for(i = 0; str[i] != '\0'; i++) {
+        if(str[i] >= 'a' && str[i] <= 'z')
+            printf("%c", str[i]);
+    }
+
+    return 0;
+}
